@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Eastwind",
+    "slug": "eastwind",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "eastwind",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FAF5EE",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.formaz.eastwind",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "Eastwind can send one line a morning, at an hour you choose. Reminders are scheduled on your phone; nothing is sent anywhere.",
+        "NSPhotoLibraryUsageDescription": "Eastwind only opens your photo library when you choose a photo for dating-profile notes. The photo is sent once to our server for the notes and is not stored.",
+        "NSCameraUsageDescription": "Eastwind can take a photo for dating-profile notes if you choose to. It is sent once for the notes and is not stored.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.formaz.eastwind",
+      "adaptiveIcon": {
+        "backgroundColor": "#1F2233",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#1F2233"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#E0763A",
+          "defaultChannel": "reminders"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Eastwind only opens your photo library when you choose a photo for dating-profile notes.",
+          "cameraPermission": "Eastwind can take a photo for dating-profile notes if you choose to."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "raymondzhao3000"
+  }
+}
