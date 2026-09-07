@@ -17,7 +17,7 @@ Everything below the first step is scripted. The first step needs a signed-in Ap
 
 5. eas.json: set `submit.production.ios.ascAppId` to APP, commit, push.
 
-6. Build + upload: `gh workflow run eastwind-ios-build.yml -R rzhaosv/forma -f ref=main -f submit=true` (or build then `eastwind-ios-upload.yml -f run_id=<id>`). Wait for the build to show `VALID` in ASC (`asc_submit.py --dry-run` prints builds).
+6. Build + upload: `gh workflow run eastwind-ios-build.yml -R tryforma/forma -f ref=main -f submit=true` (or build then `eastwind-ios-upload.yml -f run_id=<id>`). Wait for the build to show `VALID` in ASC (`asc_submit.py --dry-run` prints builds).
 
 7. Submit: `PYTHONPATH=. python3 ~/workspace/eastwind/store/asc_submit.py APP GROUP SUB_MONTHLY SUB_YEARLY`
    If the subs are not in the submission: in ASC, each subscription page → "Add for Review" → the Draft iOS Submission, then re-run.
