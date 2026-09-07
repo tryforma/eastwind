@@ -24,7 +24,10 @@
       "adaptiveIcon": {
         "backgroundColor": "#1F2233",
         "foregroundImage": "./assets/adaptive-icon.png"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       [
@@ -55,6 +58,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "owner": "raymondzhao3000"
+    "owner": "raymondzhao3000",
+    "extra": {
+      "eas": {
+        "projectId": "8962d04f-0305-4909-afcd-11bf4afa8b7b"
+      }
+    }
   }
 }

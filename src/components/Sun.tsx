@@ -26,7 +26,7 @@ export function Sun({ level, size = 180 }: { level: number; size?: number }) {
         <Rect x={0} y={horizon} width={size} height={size} fill={colors.bg} />
         <Rect x={size * 0.08} y={horizon - 1} width={size * 0.84} height={2} fill={colors.lineStrong} rx={1} />
         {[0, 1, 2].map((i) => (
-          <Rect key={i} x={size * (0.5 - 0.18 + i * 0.06)} y={cy - r * 0.35 + i * r * 0.35} width={size * (0.36 - i * 0.06)} height={Math.max(2, size * 0.028)} rx={size * 0.014} fill={colors.bg} opacity={0.9} />
+          <Rect key={i} x={size * (0.36 + i * 0.05)} y={cy - r * 0.42 + i * r * 0.42} width={size * (0.42 - i * 0.09)} height={Math.max(2, size * 0.026)} rx={size * 0.013} fill={colors.bg} opacity={0.92} />
         ))}
       </Svg>
     </View>
